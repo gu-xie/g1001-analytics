@@ -1,0 +1,207 @@
+steps:
+  STG_ENTITY_POLICY_ADDRESS-85:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: SRC
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 1187
+              stepCounter: "85"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 94
+                    stepCounter: "10"
+                transform: ""
+          - columnReference:
+              columnCounter: 1188
+              stepCounter: "85"
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_PERIOD_BEGIN
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 95
+                    stepCounter: "10"
+                transform: ""
+          - columnReference:
+              columnCounter: 1189
+              stepCounter: "85"
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_PERIOD_END
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 96
+                    stepCounter: "10"
+                transform: ""
+          - columnReference:
+              columnCounter: 1190
+              stepCounter: "85"
+            dataType: VARIANT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_PERIOD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 97
+                    stepCounter: "10"
+                transform: ""
+          - columnReference:
+              columnCounter: 1191
+              stepCounter: "85"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ADDRESS_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 98
+                    stepCounter: "10"
+                transform: ""
+          - columnReference:
+              columnCounter: 1192
+              stepCounter: "85"
+            dataType: VARIANT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EFFECTIVE_DATE_RANGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 99
+                    stepCounter: "10"
+                transform: ""
+          - columnReference:
+              columnCounter: 1193
+              stepCounter: "85"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ANNUAL_ACTIVE_RANGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 100
+                    stepCounter: "10"
+                transform: ""
+          - columnReference:
+              columnCounter: 1194
+              stepCounter: "85"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ADDRESS_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 101
+                    stepCounter: "10"
+                transform: ""
+          - columnReference:
+              columnCounter: 1195
+              stepCounter: "85"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: UPDATED_BY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 102
+                    stepCounter: "10"
+                transform: ""
+          - columnReference:
+              columnCounter: 1196
+              stepCounter: "85"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ENTITY_POLICY_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 103
+                    stepCounter: "10"
+                transform: ""
+          - columnReference:
+              columnCounter: 1197
+              stepCounter: "85"
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: _FIVETRAN_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 104
+                    stepCounter: "10"
+                transform: ""
+          - columnReference:
+              columnCounter: 1198
+              stepCounter: "85"
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 105
+                    stepCounter: "10"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SRC
+                nodeName: ENTITY_POLICY_ADDRESS
+            join:
+              joinCondition: FROM {{ ref('SRC', 'ENTITY_POLICY_ADDRESS') }} "ENTITY_POLICY_ADDRESS"
+            name: STG_ENTITY_POLICY_ADDRESS
+            noLinkRefs: []
+      name: STG_ENTITY_POLICY_ADDRESS
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: "85"

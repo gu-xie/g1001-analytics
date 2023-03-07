@@ -1,5 +1,12 @@
 defaultStorageMapping: SRC
-jobs: {}
+jobs:
+  Job-1:
+    excludeSelector: ""
+    id: 1
+    includeSelector: ""
+    name: New Job
+    steps: []
+    subgraphs: []
 locations:
   SRC:
     mappingDefinitions: {}
@@ -1398,7 +1405,7 @@ stepTypes:
     version: 1
   StepType-View:
     id: View
-    isDisabled: true
+    isDisabled: false
     metadata:
       defaultStorageLocation: null
       error: null
@@ -1945,5 +1952,9 @@ stepTypes:
             {% endif %}
     name: Persistent Stage
     version: 1
-subgraphs: {}
+subgraphs:
+  Subgraph-4:
+    id: 4
+    name: New Subgraph
+    steps: []
 version: 1
