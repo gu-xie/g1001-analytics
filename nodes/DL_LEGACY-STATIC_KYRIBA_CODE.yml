@@ -1,0 +1,64 @@
+steps:
+  STATIC_KYRIBA_CODE-153:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: DL_LEGACY
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3338
+              stepCounter: 153
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: KYRIBA_CODE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3339
+              stepCounter: 153
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: NEW_KYRIBA_CODE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3340
+              stepCounter: 153
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: FUND_MANAGER_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('DL_LEGACY', 'STATIC_KYRIBA_CODE') }}
+      name: STATIC_KYRIBA_CODE
+      schema: ""
+      sqlType: Source
+      table: STATIC_KYRIBA_CODE
+      type: sourceInput
+    stepCounter: "153"

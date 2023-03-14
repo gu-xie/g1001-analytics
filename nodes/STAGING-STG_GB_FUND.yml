@@ -1,0 +1,487 @@
+steps:
+  STG_GB_FUND-150:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: STAGING
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: true
+            columnReference:
+              columnCounter: 2846
+              stepCounter: "150"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2646
+                    stepCounter: "143"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2847
+              stepCounter: "150"
+            dataType: NUMBER(38,0)
+            description: ""
+            name: MUTUAL_FUND_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2791
+                    stepCounter: "147"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2848
+              stepCounter: "150"
+            dataType: NUMBER(38,0)
+            description: ""
+            name: VARIABLE_FUND_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2819
+                    stepCounter: "148"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2849
+              stepCounter: "150"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSIP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2647
+                    stepCounter: "143"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2850
+              stepCounter: "150"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TICKER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2648
+                    stepCounter: "143"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2851
+              stepCounter: "150"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2652
+                    stepCounter: "143"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2852
+              stepCounter: "150"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MARKETING_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2660
+                    stepCounter: "143"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2853
+              stepCounter: "150"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2659
+                    stepCounter: "143"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2854
+              stepCounter: "150"
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TO_DISPLAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2656
+                    stepCounter: "143"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2855
+              stepCounter: "150"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRODUCT_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2657
+                    stepCounter: "143"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2856
+              stepCounter: "150"
+            dataType: NUMBER(38,0)
+            description: ""
+            name: PRICE_SETTINGS_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2815
+                    stepCounter: "148"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2857
+              stepCounter: "150"
+            dataType: DATE
+            description: ""
+            name: UV_START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2824
+                    stepCounter: "148"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2858
+              stepCounter: "150"
+            dataType: FLOAT
+            description: ""
+            name: UV_START_PRICE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2820
+                    stepCounter: "148"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2859
+              stepCounter: "150"
+            dataType: VARCHAR(256)
+            description: ""
+            name: ACCOUNT_NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2780
+                    stepCounter: "147"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2860
+              stepCounter: "150"
+            dataType: DATE
+            description: ""
+            name: FUND_INCEPTION_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2795
+                    stepCounter: "147"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2861
+              stepCounter: "150"
+            dataType: VARCHAR(256)
+            description: ""
+            name: FUND_NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2788
+                    stepCounter: "147"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2862
+              stepCounter: "150"
+            dataType: BOOLEAN
+            description: ""
+            name: HAS_12B1_FEE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2794
+                    stepCounter: "147"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2863
+              stepCounter: "150"
+            dataType: NUMBER(38,0)
+            description: ""
+            name: FUND_MANAGER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2804
+                    stepCounter: "147"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2864
+              stepCounter: "150"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DISPLAY_DECIMALS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2653
+                    stepCounter: "143"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2865
+              stepCounter: "150"
+            dataType: VARCHAR(76)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DTCC_FUND_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2655
+                    stepCounter: "143"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2866
+              stepCounter: "150"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CATEGORY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2661
+                    stepCounter: "143"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2867
+              stepCounter: "150"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STRATEGY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2662
+                    stepCounter: "143"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2868
+              stepCounter: "150"
+            dataType: VARCHAR(256)
+            description: ""
+            name: FUND_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2783
+                    stepCounter: "147"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2869
+              stepCounter: "150"
+            dataType: VARCHAR(256)
+            description: ""
+            name: SHARE_CLASS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2784
+                    stepCounter: "147"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2870
+              stepCounter: "150"
+            dataType: VARCHAR(256)
+            description: ""
+            name: MORNINGSTAR_CLASS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2786
+                    stepCounter: "147"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2871
+              stepCounter: "150"
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: _FIVETRAN_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2663
+                    stepCounter: "143"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2872
+              stepCounter: "150"
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2664
+                    stepCounter: "143"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs:
+          - hasNull
+          - isDistinct
+        sourceMapping:
+          - aliases:
+              FUND: "143"
+              MUTUAL_FUND: "147"
+              VARIABLE_FUND: "148"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: GB_POLICY_MANAGEMENT
+                nodeName: FUND
+              - locationName: GB_PRICING_TRADING
+                nodeName: MUTUAL_FUND
+              - locationName: GB_PRICING_TRADING
+                nodeName: VARIABLE_FUND
+            join:
+              joinCondition: |-
+                FROM {{ ref('GB_POLICY_MANAGEMENT', 'FUND') }} "FUND"
+                LEFT JOIN  {{ ref('GB_PRICING_TRADING', 'MUTUAL_FUND') }} "MUTUAL_FUND"
+                  ON "MUTUAL_FUND"."CUSIP" = "FUND"."CUSIP"
+                LEFT JOIN {{ ref('GB_PRICING_TRADING', 'VARIABLE_FUND') }} "VARIABLE_FUND"
+                  ON "VARIABLE_FUND"."MUTUAL_FUND_ID" = "MUTUAL_FUND"."ID"
+            name: STG_GB_FUND
+            noLinkRefs: []
+      name: STG_GB_FUND
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: "150"

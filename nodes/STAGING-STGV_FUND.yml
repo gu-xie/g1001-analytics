@@ -1,0 +1,635 @@
+steps:
+  STGV_FUND-159:
+    operation:
+      config:
+        insertStrategy: UNION ALL
+        selectDistinct: false
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: true
+      locationID: ""
+      locationName: STAGING
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 3442
+              stepCounter: "159"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2713
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2846
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3443
+              stepCounter: "159"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MUTUAL_FUND_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2732
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2847
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3444
+              stepCounter: "159"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: VARIABLE_FUND_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2761
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2848
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3445
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSIP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2714
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2849
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3446
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TICKER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2715
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2850
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3447
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2719
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2851
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3448
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MARKETING_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2727
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2852
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3449
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2726
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2853
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3450
+              stepCounter: "159"
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TO_DISPLAY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2723
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2854
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3451
+              stepCounter: "159"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRODUCT_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2724
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2855
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3452
+              stepCounter: "159"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRICE_SETTINGS_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2769
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2856
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3453
+              stepCounter: "159"
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: UV_START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2777
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2857
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3454
+              stepCounter: "159"
+            dataType: FLOAT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: UV_START_PRICE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2773
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2858
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3455
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ACCOUNT_NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2733
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2859
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3456
+              stepCounter: "159"
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FUND_INCEPTION_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2747
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2860
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3457
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FUND_NUMBER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2741
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2861
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3458
+              stepCounter: "159"
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: HAS_12B1_FEE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2746
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2862
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3459
+              stepCounter: "159"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FUND_MANAGER_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2756
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2863
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3460
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FUND_MANAGER_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3438
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 3461
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FUND_MANAGER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3439
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 3462
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: KYRIBA_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3440
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 3463
+              stepCounter: "159"
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NEW_KYRIBA_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3441
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 3464
+              stepCounter: "159"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DISPLAY_DECIMALS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2720
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2864
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3465
+              stepCounter: "159"
+            dataType: VARCHAR(76)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DTCC_FUND_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2722
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2865
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3466
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CATEGORY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2728
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2866
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3467
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: STRATEGY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2729
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2867
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3468
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FUND_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2736
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2868
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3469
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SHARE_CLASS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2737
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2869
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3470
+              stepCounter: "159"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MORNINGSTAR_CLASS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2739
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2870
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3471
+              stepCounter: "159"
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: _FIVETRAN_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2730
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2871
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3472
+              stepCounter: "159"
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2731
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences:
+                  - columnCounter: 2872
+                    stepCounter: "150"
+                transform: ""
+          - columnReference:
+              columnCounter: 3521
+              stepCounter: "159"
+            dataType: VARCHAR(16777216)
+            description: ""
+            name: GL_FUND_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3520
+                    stepCounter: "146"
+                transform: ""
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3473
+              stepCounter: "159"
+            config: {}
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: SRC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0
+                    stepCounter: "0"
+                transform: "'DL'"
+              - columnReferences: []
+                transform: "'GB'"
+            systemColumnType: None
+            transform: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              STG_DL_FUND: "146"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGING
+                nodeName: STG_DL_FUND
+            join:
+              joinCondition: FROM {{ ref('STAGING', 'STG_DL_FUND') }} "STG_DL_FUND"
+            name: STGV_DL_FUND
+            noLinkRefs: []
+          - aliases:
+              STG_GB_FUND: "150"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGING
+                nodeName: STG_GB_FUND
+            join:
+              joinCondition: FROM {{ ref('STAGING', 'STG_GB_FUND') }} "STG_GB_FUND"
+            name: STGV_GB_FUND
+            noLinkRefs: []
+      name: STGV_FUND
+      overrideSQL: false
+      schema: ""
+      sqlType: "2"
+      type: sql
+    stepCounter: "159"

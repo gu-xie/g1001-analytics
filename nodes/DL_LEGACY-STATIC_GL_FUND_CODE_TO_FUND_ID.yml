@@ -1,0 +1,124 @@
+steps:
+  STATIC_GL_FUND_CODE_TO_FUND_ID-161:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: DL_LEGACY
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3513
+              stepCounter: 161
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: GL_FUND_CODE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3514
+              stepCounter: 161
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: GL_FUND_CODE_DESC
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3515
+              stepCounter: 161
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: FUND_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3516
+              stepCounter: 161
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: CUSIP
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3517
+              stepCounter: 161
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: CODE_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3518
+              stepCounter: 161
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: MARKETING_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3519
+              stepCounter: 161
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: OTHER_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('DL_LEGACY', 'STATIC_GL_FUND_CODE_TO_FUND_ID') }}
+      name: STATIC_GL_FUND_CODE_TO_FUND_ID
+      schema: ""
+      sqlType: Source
+      table: STATIC_GL_FUND_CODE_TO_FUND_ID
+      type: sourceInput
+    stepCounter: "161"

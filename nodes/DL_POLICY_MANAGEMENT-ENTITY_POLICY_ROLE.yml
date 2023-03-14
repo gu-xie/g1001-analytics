@@ -1,0 +1,199 @@
+steps:
+  ENTITY_POLICY_ROLE-101:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: DL_POLICY_MANAGEMENT
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1429
+              stepCounter: 101
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: false
+            primaryKey: true
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1430
+              stepCounter: 101
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: SYS_PERIOD_BEGIN
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1431
+              stepCounter: 101
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: SYS_PERIOD_END
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1432
+              stepCounter: 101
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: SYS_PERIOD
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1433
+              stepCounter: 101
+            config: {}
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: ROLE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1434
+              stepCounter: 101
+            config: {}
+            dataType: VARCHAR(256)
+            defaultValue: ""
+            description: ""
+            name: UPDATED_BY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1435
+              stepCounter: 101
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: IRREVOCABLE_INDICATOR
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1436
+              stepCounter: 101
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: ENTITY_POLICY_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1437
+              stepCounter: 101
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: ROLE_PERCENTAGE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1438
+              stepCounter: 101
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: ROLE_EFFECTIVE_RANGE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1439
+              stepCounter: 101
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1440
+              stepCounter: 101
+            config: {}
+            dataType: TIMESTAMP_TZ(9)
+            defaultValue: ""
+            description: ""
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('DL_POLICY_MANAGEMENT', 'ENTITY_POLICY_ROLE') }}
+      name: ENTITY_POLICY_ROLE
+      schema: ""
+      sqlType: Source
+      table: ENTITY_POLICY_ROLE
+      type: sourceInput
+    stepCounter: "101"

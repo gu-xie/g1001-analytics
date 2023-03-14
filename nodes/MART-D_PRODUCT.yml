@@ -1,0 +1,336 @@
+steps:
+  D_PRODUCT-158:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: MART
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3411
+              stepCounter: "158"
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSurrogateKey: true
+            name: D_PRODUCT_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 3412
+              stepCounter: "158"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PRODUCT_ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3391
+                    stepCounter: "157"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: false
+            columnReference:
+              columnCounter: 3431
+              stepCounter: "158"
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SRC
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3410
+                    stepCounter: "157"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3418
+              stepCounter: "158"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRODUCT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3397
+                    stepCounter: "157"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3426
+              stepCounter: "158"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRODUCT_DESC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3405
+                    stepCounter: "157"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3423
+              stepCounter: "158"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRODUCT_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3402
+                    stepCounter: "157"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3414
+              stepCounter: "158"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSIP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3393
+                    stepCounter: "157"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3419
+              stepCounter: "158"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LINE_OF_AUTHORITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3398
+                    stepCounter: "157"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3413
+              stepCounter: "158"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LEGAL_ENTITY_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3392
+                    stepCounter: "157"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3429
+              stepCounter: "158"
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SRC_IS_DELETED
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3408
+                    stepCounter: "157"
+                transform: COALESCE("STGV_PRODUCT"."_FIVETRAN_DELETED",FALSE)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3432
+              stepCounter: "158"
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemVersion: true
+            name: SYS_VERSION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3433
+              stepCounter: "158"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCurrentFlag: true
+            name: SYS_CURRENT_FLAG
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3434
+              stepCounter: "158"
+            config: {}
+            dataType: TIMESTAMP_LTZ
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemStartDate: true
+            name: SYS_START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP_LTZ)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3435
+              stepCounter: "158"
+            config: {}
+            dataType: TIMESTAMP_LTZ
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemEndDate: true
+            name: SYS_END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP_LTZ)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3436
+              stepCounter: "158"
+            config: {}
+            dataType: TIMESTAMP_LTZ
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: SYS_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP_LTZ)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3437
+              stepCounter: "158"
+            config: {}
+            dataType: TIMESTAMP_LTZ
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemUpdateDate: true
+            name: SYS_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP_LTZ)
+        cteString: ""
+        enabledColumnTestIDs:
+          - hasNull
+          - isDistinct
+        sourceMapping:
+          - aliases:
+              STGV_PRODUCT: "157"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGING
+                nodeName: STGV_PRODUCT
+            join:
+              joinCondition: FROM {{ ref('STAGING', 'STGV_PRODUCT') }} "STGV_PRODUCT"
+            name: D_PRODUCT
+            noLinkRefs: []
+      name: D_PRODUCT
+      overrideSQL: false
+      schema: ""
+      sqlType: "3"
+      type: sql
+    stepCounter: "158"

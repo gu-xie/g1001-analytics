@@ -1,0 +1,364 @@
+steps:
+  STG_GB_PRODUCT-134:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: STAGING
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: true
+            columnReference:
+              columnCounter: 2427
+              stepCounter: "134"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2389
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2428
+              stepCounter: "134"
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LEGAL_ENTITY_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2390
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2429
+              stepCounter: "134"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CUSIP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2391
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2430
+              stepCounter: "134"
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_PERIOD_BEGIN
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2392
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2431
+              stepCounter: "134"
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_PERIOD_END
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2393
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2432
+              stepCounter: "134"
+            dataType: VARIANT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SYS_PERIOD
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2394
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2433
+              stepCounter: "134"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2395
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2434
+              stepCounter: "134"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LINE_OF_AUTHORITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2396
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2435
+              stepCounter: "134"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DATA_SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2397
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2436
+              stepCounter: "134"
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: IS_MAINTAINED_BY_ONYX
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2398
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2437
+              stepCounter: "134"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TRADEMARK_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2399
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2438
+              stepCounter: "134"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRODUCT_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2400
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2439
+              stepCounter: "134"
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: REQUIRES_BENE_TO_CYCLE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2401
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2440
+              stepCounter: "134"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: UPDATED_BY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2402
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2441
+              stepCounter: "134"
+            dataType: VARCHAR(256)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2403
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2442
+              stepCounter: "134"
+            dataType: FLOAT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ASSET_CHARGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2404
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2443
+              stepCounter: "134"
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: REQUIRES_AGENT_TO_CYCLE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2405
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2444
+              stepCounter: "134"
+            dataType: BOOLEAN
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: _FIVETRAN_DELETED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2406
+                    stepCounter: "132"
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2445
+              stepCounter: "134"
+            dataType: TIMESTAMP_TZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: _FIVETRAN_SYNCED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2407
+                    stepCounter: "132"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs:
+          - hasNull
+          - isDistinct
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: GB_POLICY_MANAGEMENT
+                nodeName: PRODUCT
+            join:
+              joinCondition: FROM {{ ref('GB_POLICY_MANAGEMENT', 'PRODUCT') }} "PRODUCT"
+            name: STG_GB_PRODUCT
+            noLinkRefs: []
+      name: STG_GB_PRODUCT
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: "134"
